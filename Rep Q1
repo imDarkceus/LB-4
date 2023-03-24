@@ -1,0 +1,14 @@
+/**Report Question 1: Write a C program to find the one’s and two’s complement of a given
+number.
+Code:**/
+#include <stdio.h>
+int main() { 
+int num, ones_comp, twos_comp;
+ printf("Enter a number: ");
+ scanf("%d", &num);
+ones_comp = ~num;
+ twos_comp = ones_comp + 1;
+printf("One's complement of %d is %d\n", num, ones_comp);
+printf("Two's complement of %d is %d\n", num, twos_comp);
+return 0;
+}
